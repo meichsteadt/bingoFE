@@ -1,0 +1,52 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.container  {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  word-wrap: break-word;
+  margin: 0;
+  font-size: 18px;
+}
+
+h2.marker {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 88px;
+  color: #333;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+h2.marker.show {
+  opacity: .8;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+}
+
+.col {
+  border: 1px solid #333;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col:hover {
+  cursor: pointer;
+}
